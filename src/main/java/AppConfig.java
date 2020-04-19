@@ -9,10 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     @Bean(name = "speakerService")
     public SpeakerService getSpeakerService() {
-        final SpeakerServiceImpl speakerService = new SpeakerServiceImpl();
-        speakerService.setRepository(getSpeakerRepository());
-
-        return speakerService;
+        return new SpeakerServiceImpl(getSpeakerRepository());
     }
 
     @Bean(name = "speakerRepository")

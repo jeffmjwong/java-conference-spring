@@ -7,7 +7,6 @@ public class Application {
     public static void main (String[] args) {
         final ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class);
 
-//        final SpeakerService service = new SpeakerServiceImpl();
         final SpeakerService service = appContext.getBean("speakerService", SpeakerService.class);
 
         System.out.println(service.findAll().get(0).getFirstName());
