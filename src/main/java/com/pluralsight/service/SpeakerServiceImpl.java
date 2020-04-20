@@ -6,9 +6,18 @@ import com.pluralsight.repository.SpeakerRepository;
 import java.util.List;
 
 public class SpeakerServiceImpl implements SpeakerService {
-    private final SpeakerRepository repository;
+    private SpeakerRepository repository;
+
+    public SpeakerServiceImpl() {
+        System.out.println("no args constructor is used!");
+    }
 
     public SpeakerServiceImpl(SpeakerRepository repository) {
+        System.out.println("arg constructor is used!");
+        this.repository = repository;
+    }
+
+    public void setRepository(SpeakerRepository repository) {
         this.repository = repository;
     }
 
