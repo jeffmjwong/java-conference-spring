@@ -15,12 +15,13 @@ public class SpeakerServiceImpl implements SpeakerService {
         System.out.println("SpeakerServiceImpl no args constructor!");
     }
 
+    @Autowired
     public SpeakerServiceImpl(SpeakerRepository repository) {
         System.out.println("SpeakerServiceImpl repository constructor!");
         this.repository = repository;
     }
 
-    @Autowired
+//    @Autowired
     public void setRepository(SpeakerRepository repository) {
         System.out.println("SpeakerServiceImpl setter!");
         this.repository = repository;
