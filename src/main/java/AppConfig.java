@@ -17,8 +17,8 @@ public class AppConfig {
 //        return new SpeakerServiceImpl();
 //    }
 
-    @Bean(name = "speakerRepository")
-    public SpeakerRepository getSpeakerRepository() {
-        return new HibernateSpeakerRepositoryImpl();
-    }
+//    @Bean(name = "speakerRepository")
+//    public SpeakerRepository getSpeakerRepository() {
+//        return new HibernateSpeakerRepositoryImpl();
+//    }
 }
