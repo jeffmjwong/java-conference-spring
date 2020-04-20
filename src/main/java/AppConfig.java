@@ -11,11 +11,11 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 @ComponentScan({"com.pluralsight"})
 public class AppConfig {
-    @Bean(name = "speakerService")
-    @Scope(BeanDefinition.SCOPE_SINGLETON)
-    public SpeakerService getSpeakerService() {
-        return new SpeakerServiceImpl();
-    }
+//    @Bean(name = "speakerService")
+//    @Scope(BeanDefinition.SCOPE_SINGLETON)
+//    public SpeakerService getSpeakerService() {
+//        return new SpeakerServiceImpl();
+//    }
 
     @Bean(name = "speakerRepository")
     public SpeakerRepository getSpeakerRepository() {
