@@ -2,6 +2,7 @@ package com.pluralsight.service;
 
 import com.pluralsight.model.Speaker;
 import com.pluralsight.repository.SpeakerRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class SpeakerServiceImpl implements SpeakerService {
         this.repository = repository;
     }
 
+    @Autowired
     public void setRepository(SpeakerRepository repository) {
         System.out.println("SpeakerServiceImpl setter!");
         this.repository = repository;
