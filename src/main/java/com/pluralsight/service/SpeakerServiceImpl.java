@@ -9,15 +9,16 @@ public class SpeakerServiceImpl implements SpeakerService {
     private SpeakerRepository repository;
 
     public SpeakerServiceImpl() {
-        System.out.println("no args constructor is used!");
+        System.out.println("SpeakerServiceImpl no args constructor!");
     }
 
     public SpeakerServiceImpl(SpeakerRepository repository) {
-        System.out.println("arg constructor is used!");
+        System.out.println("SpeakerServiceImpl repository constructor!");
         this.repository = repository;
     }
 
     public void setRepository(SpeakerRepository repository) {
+        System.out.println("SpeakerServiceImpl setter!");
         this.repository = repository;
     }
 
