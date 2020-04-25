@@ -16,4 +16,8 @@ public class CalendarFactory implements FactoryBean<Calendar> {
     public Class<?> getObjectType() {
         return Calendar.class;
     }
+
+    public void addDays(int num) {
+        instance.add(Calendar.DAY_OF_YEAR, num);
+    }
 }
