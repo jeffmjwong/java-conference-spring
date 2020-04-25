@@ -14,6 +14,6 @@ public class CalendarFactory implements FactoryBean<Calendar> {
 
     @Override
     public Class<?> getObjectType() {
-        return null;
+        return Calendar.class;
     }
 }
