@@ -14,15 +14,15 @@ import java.util.Calendar;
 @Configuration
 @ComponentScan({"com.pluralsight"})
 public class AppConfig {
-    @Bean(name = "cal")
+    @Bean
     public CalendarFactory calFactory() {
         final CalendarFactory factory = new CalendarFactory();
-        factory.addDays(2);
+        factory.addDays(3);
         return factory;
     }
 
     @Bean
-    public Calendar cal() throws Exception {
+    public Calendar calendar() throws Exception {
         return calFactory().getObject();
     }
 
