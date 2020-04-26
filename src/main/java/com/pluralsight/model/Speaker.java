@@ -18,4 +18,11 @@ public class Speaker {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public double getSeedNumber() {
+        return seedNumber;
+    }
+    public void setSeedNumber(double seedNumber) {
+        this.seedNumber = seedNumber;
+    }
 }
