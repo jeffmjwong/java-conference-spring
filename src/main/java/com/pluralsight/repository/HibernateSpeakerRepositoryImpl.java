@@ -20,6 +20,8 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
         speaker.setFirstName("Bryan");
         speaker.setLastName("Hansen");
 
+        System.out.println("calendar: " + calendar.getTime());
+
         speakers.add(speaker);
 
         return speakers;
