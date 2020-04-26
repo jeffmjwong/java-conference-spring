@@ -26,7 +26,6 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
         speaker.setSeedNumber(seedNumber);
 
         System.out.println("calendar: " + calendar.getTime());
-        System.out.println(seedNumber);
 
         speakers.add(speaker);
 
